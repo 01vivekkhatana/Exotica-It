@@ -1,0 +1,22 @@
+.customers {
+    display: flex;
+    height: 100vh;
+    background-color: whitesmoke;
+    color: #616161;
+  
+    .customersContainer {
+      flex: 6;
+      overflow-y: auto; // Add this line to enable scrollbar when content overflows
+      display: flex; // Allow nested flex container
+      flex-direction: column; // Arrange children vertically
+    }
+  
+    .sidebar {
+      // Add any necessary styles to the sidebar
+      // Make sure to set a fixed width for the sidebar
+      overflow-y: auto; // This will enable vertical scroll only when necessary
+      width: 250px; // Adjust width as needed
+      flex: 0 0 auto; // Prevent sidebar from growing or shrinking
+    }
+  }
+  

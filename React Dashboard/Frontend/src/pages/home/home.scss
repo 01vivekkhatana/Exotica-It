@@ -1,0 +1,37 @@
+.home {
+    display: flex;
+    height: 100vh; // Ensure the home component takes the full height of the viewport
+  
+    .sidebar {
+      position: fixed;
+      width: 250px; // Adjust this width as per your design
+      height: 100vh; // Full height to cover the viewport
+      overflow-y: auto; // Allow scrolling in case the sidebar content exceeds the viewport height
+    }
+  
+  
+    .homeContainer {
+      margin-left: 250px; // Same as the width of the sidebar
+      flex-grow: 1;
+      overflow-y: auto; // This makes the right side content scrollable
+      height: 100vh; // Ensure it takes the full height of the viewport
+      background-color: whitesmoke;
+      color: #616161;
+  
+      .widgets,
+      .charts {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+      }
+  
+      .charts {
+        padding: 5px 20px;
+      }
+  
+      .display{
+        margin-top: 48px;
+      }
+    }
+  }
+  
